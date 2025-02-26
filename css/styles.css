@@ -1,0 +1,623 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+  scroll-behavior: smooth;
+}
+
+/* MAIN CONTAINER STYLING  */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* HEADER STYLING START */
+.headDecor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+}
+
+.navItems ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navItems ul li {
+  padding: 20px;
+}
+
+.navItems ul li a {
+  text-decoration: none;
+  color: #545454;
+  font-size: 22px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.navItems ul li .active {
+  color: #1f1f1f;
+}
+
+.headDecor .button {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.headDecor .navButton {
+  border: none;
+  color: white;
+  padding: 12px 35px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #1f1f1f;
+  border-radius: 4px;
+}
+
+.headDecor .navButton:hover {
+  background-color: #302f2f;
+}
+
+/* HEADER STYLING END */
+
+/* HERO CONTAINER STYLING START*/
+.heroContainer {
+  margin-top: 100px;
+  width: 100%;
+  /* border: solid red 2px; */
+}
+
+.interiorLeft {
+  width: 70%;
+  /* border: solid black 2px; */
+}
+
+.interiorRight {
+  width: 30%;
+  /* border: solid black 2px; */
+}
+
+.interiorRight img {
+  width: 100%;
+  height: 250px;
+}
+
+/* HERO CONTAINER - INTERIOR TOP STYLING */
+.interiorTop {
+  display: flex;
+}
+
+.interiorLeft h1 {
+  font-size: 85px;
+}
+
+.interiorLeft p {
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 1.5em;
+  color: #545454;
+}
+
+.interiorRightImage {
+  width: 100%;
+}
+
+/* HERO CONTAINER - INTERIOR BOTTOM STYLING */
+.interiorBottom {
+  display: flex;
+}
+
+.bottomLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  /* border: solid black 2px; */
+}
+
+.bottomRight {
+  width: 40%;
+  /* position: relative; */
+  /* border: solid black 2px; */
+}
+
+.bottomLeft .bottomButton {
+  border: none;
+  color: white;
+  padding: 12px 45px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #1f1f1f;
+  border-radius: 4px;
+}
+
+.bottomLeft .bottomButton:hover {
+  background-color: #302f2f;
+}
+
+.interiorCounts {
+  display: flex;
+  gap: 40px;
+}
+
+.countItems {
+  text-align: center;
+}
+
+.countItems h3 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #545454;
+}
+
+.countItems p {
+  font-weight: 400;
+  color: #545454;
+}
+
+.bottomImage {
+  width: 100%;
+}
+
+.bottomImage img {
+  width: 85%;
+  height: 250px;
+}
+
+/* HERO CONTAINER STYLING END */
+
+/* <!-- SERVICS SECTION STYLING START --> */
+.servicesContainer {
+  width: 100%;
+  margin-top: 150px;
+  flex-wrap: wrap;
+  /* display: flex;
+    flex-direction: column; */
+}
+
+.servicesContainer h2 {
+  font-size: 36px;
+  font-weight: 600;
+  position: relative;
+  left: 100px;
+}
+
+.servicesContainer h2::before {
+  content: "";
+  position: absolute;
+  width: 7%;
+  background: #9b9b9b;
+  top: 20px;
+  height: 5px;
+  left: 0;
+  transform: translate(-100px);
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.servicesContainer svg {
+  color: #1f1f1f;
+}
+
+.servicesBoxes {
+  display: flex;
+  gap: 50px;
+  margin-top: 70px;
+}
+
+.boxItems {
+  display: flex;
+  gap: 15px;
+}
+
+.boxItems .lightingText h3 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #1f1f1f;
+}
+
+.boxItems .lightingText p {
+  font-weight: 500;
+  margin-top: 15px;
+  color: #545454;
+  line-height: 1.5em;
+}
+
+/* <!-- SERVICS SECTION STYLING END --> */
+
+/* DREAM DESIGN SECTION STYLE START */
+.dreamDesignContainer {
+  display: flex;
+  width: 100%;
+  margin-top: 150px;
+  /* justify-content: space-between; */
+  /* gap: 60px; */
+  /* background-color: #302f2f; */
+}
+
+.dreamDesignImage {
+  width: 50%;
+  /* border: 2px solid black; */
+}
+
+.dreamDesignImage img {
+  width: 90%;
+  height: 500px;
+}
+
+.dreamDesignText {
+  width: 50%;
+  /* border: 2px solid black; */
+}
+
+.dreamDesignText h2 {
+  font-size: 58px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+
+.dreamDesignText p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1f1f1f;
+  line-height: 2em;
+}
+
+.dreamAccordian {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dadada;
+  padding: 15px 0;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.button .btn {
+  border: none;
+  color: #ffffff;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #1f1f1f;
+  border-radius: 4px;
+  margin-top: 40px;
+}
+
+.dreamDesignText .btn:hover {
+  background-color: #302f2f;
+}
+
+/* DREAM DESIGN SECTION STYLE END */
+
+/* DREAM DESIGN IN SIMPLE STEPS SECTION STYLE START */
+.dreamStepsContainer {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.dreamStepsLeft {
+  width: 50%;
+  /* border: 2px solid black; */
+}
+
+.dreamStepsLeft h2 {
+  font-size: 46px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+
+.dreamStepsIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.stepIcon {
+  display: flex;
+  gap: 30px;
+}
+
+.imageIcon {
+  position: relative;
+}
+
+.imageIcon::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background: #9b9b9b;
+  top: 63px;
+  height: 55px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.dreamStepsText h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+
+.dreamStepsText p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #545454;
+  line-height: 1.3em;
+  /* width: 80%; */
+}
+
+.dreamStepsRight {
+  width: 50%;
+  /* border: 2px solid black; */
+}
+
+.stepImage {
+  width: 100%;
+}
+
+.stepImage img {
+  width: 100%;
+  height: 510px;
+}
+
+/* DREAM DESIGN IN SIMPLE STEPS SECTION STYLE END */
+
+/* TESTIMONIAL SECTION STYLE START */
+.testimonialContainer {
+  display: flex;
+  width: 100%;
+  margin-top: 180px;
+  position: relative;
+}
+
+.testimonialLeft {
+  width: 50%;
+  /* border: 2px solid red; */
+}
+
+.testimonialImage {
+  width: 100%;
+}
+
+.testimonialImage img {
+  width: 90%;
+  height: 500px;
+}
+
+.testimonialArrows {
+  width: 45%;
+  height: 45px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonialArrowLeft {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+.testimonialArrowRight {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+.testimonialRight {
+  width: 50%;
+  /* border: 2px solid red; */
+}
+
+.testimonialRight h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+
+.testimonialCards {
+  width: 75%;
+  height: 380px;
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 12px;
+  gap: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  /* border: 2px solid blue; */
+}
+
+.testimonialCardItem {
+  height: 370px;
+  background-color: #1f1f1f;
+  border-radius: 4px;
+}
+
+.testimonialCardItem h2 {
+  font-size: 58px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 25px 40px;
+}
+
+.testimonialPara {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 0px 40px;
+  line-height: 1.4em;
+}
+
+.testimonialBox {
+  position: absolute;
+  display: flex;
+  margin: 25px 40px;
+}
+
+.testimonialBoxImage img {
+  width: 80%;
+  border-radius: 70%;
+}
+
+.testimonialBoxText {
+  margin-top: 5px;
+}
+
+.testimonialBoxText h4 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.testimonialBoxText p {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 5px;
+  color: #545454;
+}
+
+/* TESTIMONIAL SECTION STYLE END */
+
+/* <!-- NEWSLETTER SECTION STYLE START --> */
+.newsLetterContainer {
+  width: 60%;
+  margin: 100px auto;
+  border-radius: 4px;
+  /* height: 335px; */
+}
+
+.newsLetterContainer h2 {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  padding: 0 35px;
+}
+
+.newsLetterContainer p {
+  font-size: 20px;
+  line-height: 1.4em;
+  text-align: center;
+  padding: 50px 85px;
+}
+
+.newsletterInput {
+  text-align: center;
+  position: relative;
+}
+
+.newsletterInput input {
+  padding: 22px 60px;
+  width: 100%;
+  border: 0;
+  outline: none;
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.emailIcon {
+  position: absolute;
+  top: 20px;
+  left: 26px;
+}
+
+.newsletterInput button {
+  background: #1f1f1f;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 40px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.newsletterInput button:hover {
+  background-color: #302f2f;
+}
+
+/* <!-- NEWSLETTER SECTION STYLE END --> */
+
+/* FOOTER SECTION STYLE START */
+.footerContainer {
+  display: flex;
+  padding: 120px 130px;
+  color: #f1f1f1;
+  background-color: #1f1f1f;
+  justify-content: space-around;
+}
+
+.footerColumns {
+  width: 25%;
+}
+
+.footerLogo {
+  width: 40%;
+}
+
+.footerColumns ul {
+  list-style: none;
+}
+
+.footerColumns ul li {
+  width: 60%;
+  margin-top: 20px;
+}
+
+.footerColumns ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+.social-icons {
+  width: 60%;
+}
+
+.socialBar {
+  display: flex;
+  list-style: none;
+}
+
+.social-icons li {
+  padding: 8px;
+}
+
+.social-icons li a {
+  padding: 5px 10px;
+  color: #ffffff;
+  background-color: #313131;
+  border-radius: 4px;
+}
+
+/* FOOTER SECTION STYLE END */
